@@ -64,7 +64,7 @@ body{
     width : 70%;
 }
 
-#upper,#middle,#lower{
+#upper, #lower{
     height : 232px;
 }
 
@@ -96,7 +96,73 @@ body{
     background-color: rgb(136, 79, 136);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
     position: relative;
+    height : 250px;
 }
+
+#middle h3{
+    padding : 8px 0px 0px 32px;
+}
+
+#form-fields{
+    display : flex;
+}
+
+input[type = "text"], input[type = "password"], input[type = "email"], input[type = "tel"]{
+    background-color: rgb(88, 26, 78);
+    color : rgb(162, 170, 176);
+    border-radius : 5px;
+    padding-left : 8px;
+    font-size : 16px;
+    height : 25px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgb(88, 26, 78) inset;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+input::placeholder{
+    color : rgb(162, 170, 176);
+}
+
+input:not([type = "submit"]):user-valid{
+    border : 2px solid green;
+}
+
+input:not([type = "submit"])user-invalid{
+    border : 2px solid red;
+}
+
+input:focus{
+   border : 2px solid rgb(255, 221, 0);
+   box-shadow : 1px 1px 5px rgb(255, 0, 0);
+}
+
+#left-mid,#right-mid{
+    display : flex;
+    flex-direction : column;
+    gap : 12px;
+    width : 384px;
+    color : black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#left-mid{
+    padding : 14px 0px 0px 32px;
+}
+
+ #right-mid{
+    padding : 14px 0px 0px 68px;
+ }
+
+
+
+
+
+
 
 #lower{
     display : flex;

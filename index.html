@@ -28,10 +28,37 @@
             <p id = "encouragement"> You <em>know</em> you want to take a look at this beautiful form. I know I do!😉</p>
         </div>
 
-        <div id = "middle"></div>
+        <div id = "middle">
+            <h3> Let's Do This! </h3>
+        
+            <form id = "form-fields" action = "./lol.com" method = "post"> 
+                <div id = "left-mid">
+                    <label for = "first-name">*FIRST NAME</label>
+                    <input id = "first-name" type = "text" name = "first-name" required>
+
+                    <label for = "email">*EMAIL</label>
+                    <input id = "email" type = "email" name = "email" required>
+
+                    <label for = "password">*PASSWORD</label>
+                    <input id = "password" type = "password" name = "password" required>
+                </div>
+
+
+                <div id = "right-mid">
+                    <label for = "last-name">*LAST NAME</label>
+                    <input id = "last-name" type = "text" name = "last-name" required>
+
+                    <label for = "phone-num">PHONE NO</label>
+                    <input id = "phone-num" type = "tel" name = "phone-num" placeholder = "03XX-XXXXXXX">
+
+                    <label for = "confirm-pw">*CONFIRM PASSWORD</label>
+                    <input id = "confirm-pw" type = "password" name = "confirm-pw" required>
+                </div>
+           </form>
+        </div>
 
         <div id = "lower">
-            <input type = "submit" value = "Create Account" name = "account-btn" id = "account-btn">
+            <input type = "submit" value = "Create Account" name = "account-btn" id = "account-btn" form = "form-fields">
             <p id = "account-available"> Already have an account? <a href = "https://www.google.com/">Login</a> </p>
         </div>
     </div>
